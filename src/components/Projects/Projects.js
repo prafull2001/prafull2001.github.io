@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
 import matchmeds from "../../Assets/Projects/matchmeds.png";
 import grocerymule from "../../Assets/Projects/grocerymule.png";
 import shell from "../../Assets/Projects/shell.png";
@@ -11,7 +10,6 @@ import nhs from "../../Assets/Projects/nhs.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
         <h1 className="project-heading">
           My past projects

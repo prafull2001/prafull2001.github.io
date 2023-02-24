@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -23,11 +22,11 @@ function Home2() {
           </h1>
 
             <p className="home-about-body">
-              I'm a senior at UW Madison graduating in Computer Science.
+              I'm a senior at UW Madison graduating in Computer Science this Spring 2023 (Roll Badge! 🦡).
               <br />
               <br />
               I have experience developing full stack websites and mobile applications.
-              <br />
+              I love building things that provide tangible value in people's daily lives, however small the impact.
             </p>
           </Col>
         </Row>
