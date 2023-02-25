@@ -32,7 +32,7 @@ function Projects() {
             <ProjectCard
               imgPath={shell}
               isBlog={false}
-              title="Unix based shell application"
+              title="Unix based shell"
               description="Unix based terminal writtern in C. Allows users to create command aliases and redirect output."
               ghLink="https://github.com/prafull2001/interactive-shell"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
