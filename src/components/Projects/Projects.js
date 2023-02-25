@@ -6,6 +6,7 @@ import grocerymule from "../../Assets/Projects/grocerymule.png";
 import shell from "../../Assets/Projects/shell.png";
 import jumper from "../../Assets/Projects/jumper.png";
 import nhs from "../../Assets/Projects/nhs.png";
+import save from "../../Assets/Projects/save.png";
 
 function Projects() {
   return (
@@ -65,9 +66,20 @@ function Projects() {
               imgPath={jumper}
               isBlog={false}
               title="JUMP3R"
-              description="Simple platform jumping game"
-              ghLink="https://github.com/prafull2001/NHS-Student"
-              demoLink="https://devpost.com/software/nhs-tutoring-app"
+              description="Simple 2D platformer jumping game. Written in Lua using Corona Labs."
+              ghLink="https://github.com/ByteMeClub/Jumper"
+              // demoLink="https://devpost.com/software/nhs-tutoring-app"
+            />
+          </Col>
+          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={save}
+              isBlog={false}
+              title="S.A.V.E. Mobile App"
+              description="An app for SAVE Animal Shelter located in Montgomery, NJ, to make the process of adopting pets, volunteering, and donating more efficient and convenient."
+              ghLink="https://github.com/codeforprinceton/savePets"
+              // demoLink="https://devpost.com/software/nhs-tutoring-app"
             />
           </Col>
         </Row>
