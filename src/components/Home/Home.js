@@ -8,34 +8,34 @@ function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
+  <Container className="home-content" style={{ textAlign: "center" }}>
+    <Row>
+      <Col md={7} className="home-header">
+        <h1 style={{ paddingBottom: 15 }} className="heading">
+          Hey There!{" "}
+          <span className="wave" role="img" aria-labelledby="wave">
+            👋🏻
+          </span>
+        </h1>
 
-        <Container className="home-content">
-          <Row>
-            <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hey There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
-              </h1>
+        <h1 className="heading-name">
+          I'm Prafull.
+        </h1>
+      </Col>
 
-              <h1 className="heading-name">
-                I'm Prafull.
-              </h1>
-            </Col>
+      <Col md={5} className="d-flex justify-content-center mt-md-0 mt-md-3">
+        <img
+          src={homeLogo}
+          alt="home pic"
+          className="img-fluid"
+          style={{ maxHeight: "300px", borderRadius: "50px" }}
+        />
+      </Col>
+    </Row>
+  </Container>
+  <Home2 />
+</Container>
 
-            <Col md={5} style={{ paddingBottom: 1 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "300px", borderRadius: "50px"}}
-              />
-            </Col>
-          </Row>
-        </Container>
-      </Container>
-      <Home2 />
     </section>
   );
 }

@@ -9,7 +9,13 @@ import {
   SiConcourse,
   SiJava,
   SiAmazonaws,
-  SiTensorflow
+  SiTensorflow,
+  SiMongodb,
+  SiC,
+  SiRstudio,
+  SiNodedotjs,
+  SiReact,
+  SiLinux,
 } from "react-icons/si";
 
 function Toolstack() {
@@ -41,6 +47,24 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiTensorflow />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMongodb />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiC />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiRstudio />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNodedotjs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiReact />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiLinux />
       </Col>
     </Row>
   );

@@ -48,6 +48,9 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiPytorch />
       </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiMongodb />
+      </Col>
     </Row>
   );
 }
