@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import BlogCards from "./BlogCards";
-import matchmeds from "../../Assets/Projects/matchmeds.png";
-import grocerymule from "../../Assets/Projects/grocerymule.png";
-import shell from "../../Assets/Projects/shell.png";
-import jumper from "../../Assets/Projects/jumper.png";
-import nhs from "../../Assets/Projects/nhs.png";
-import save from "../../Assets/Projects/save.png";
+import grocerymule from "../../Assets/Blogs/grocerymule.png";
+import lmnd from "../../Assets/Blogs/lmnd.png";
+import coursera from "../../Assets/Blogs/coursera.png";
+import palantir from "../../Assets/Blogs/palantir.png";
+import tencent from "../../Assets/Blogs/tencent.png";
+
 
 function Blogs () {
   return (
@@ -20,66 +20,54 @@ function Blogs () {
             <BlogCards
               imgPath={grocerymule}
               isBlog={false}
-              title="GroceryMule "
-              description="Mobile application allowing students to shop for groceries with roommmates. Make a list, add your items, and take a picture of the receipt at the end to get accurate totals. Created using Flutter and Firebase "
-              ghLink="https://github.com/prafull2001/grocerymule-website"
-              demoLink="https://grocerymule.net/"
-
+              title="From The Ground Up - Version Control "
+              description="Welcome to the second installment of 'From The Ground Up'! In this article I wanted to share a little bit about how we use Github for GroceryMule and how a good Git-flow is important for any project's success."
+              ghLink="https://www.linkedin.com/pulse/from-ground-up-version-control-prafull-sharma"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <BlogCards
-              imgPath={shell}
+              imgPath={grocerymule}
               isBlog={false}
-              title="Unix based shell"
-              description="Unix based terminal writtern in C. Allows users to create command aliases and redirect output."
-              ghLink="https://github.com/prafull2001/interactive-shell"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="From The Ground Up - Data Modeling"
+              description="Welcome to the first installment of 'From the Ground Up'! In this series, I'll be talking about some of the things that I've learned creating GroceryMule - a mobile app that streamlines the group shopping experience for college students - with my two friends and partners, Dhruv Jain and Harry Wang."
+              ghLink="https://www.linkedin.com/pulse/from-ground-up-data-modeling-prafull-sharma"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <BlogCards
-              imgPath={matchmeds}
+              imgPath={lmnd}
               isBlog={false}
-              title="MatchMeds"
-              description="Won $11,000 at 2019 Diamond Challenge. An online platform connecting patients to a network of safety-net clinics. Full stack web application written using the MERN stack."
-              ghLink="https://github.com/prafull2001/matchmeds-demo-app"
-              demoLink="https://diamondchallenge.org/2019/06/diamond-challenge-highlight-matchmeds/"
+              title="Investing in the Familiar - Lemonade"
+              description="This is the 4th installment in my investing blog where I talk about companies with long term potential growth. Lemonade is a young tech-based insurance company disrupting the insurance industry."
+              ghLink="https://www.linkedin.com/pulse/investing-familiar-lemonade-prafull-sharma"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <BlogCards
-              imgPath={nhs}
+              imgPath={coursera}
               isBlog={false}
-              title="NHS Tutoring App"
-              description="Mobile app connecting National Honor Society members to students seeking peer mentorship Written using Swift and Firebase for realtime chatroom functionality"
-              ghLink="https://github.com/prafull2001/NHS-Student"
-              demoLink="https://devpost.com/software/nhs-tutoring-app"
+              title="Investing in the Familiar - Coursera"
+              description="This is the third installment in my investments series. This time I'll be talking about Coursera and what my thoughts are on its future."
+              ghLink="https://www.linkedin.com/pulse/investing-familiar-coursera-prafull-sharma"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <BlogCards
-              imgPath={jumper}
+              imgPath={palantir}
               isBlog={false}
-              title="JUMP3R"
-              description="Simple 2D platformer jumping game. Written in Lua using Corona Labs."
-              ghLink="https://github.com/ByteMeClub/Jumper"
-              // demoLink="https://devpost.com/software/nhs-tutoring-app"
+              title="Investing in the Familiar - Palantir"
+              description="This is my the second installment in my investing blog. This time I'll be talking about Palantir and what my thoughts are on its future."
+              ghLink="https://www.linkedin.com/pulse/investing-familiar-palantir-prafull-sharma"
             />
           </Col>
-          
           <Col md={4} className="project-card">
             <BlogCards
-              imgPath={save}
+              imgPath={tencent}
               isBlog={false}
-              title="S.A.V.E. Mobile App"
-              description="An app for SAVE Animal Shelter located in Montgomery, NJ, to make the process of adopting pets, volunteering, and donating more efficient and convenient."
-              ghLink="https://github.com/codeforprinceton/savePets"
-              // demoLink="https://devpost.com/software/nhs-tutoring-app"
+              title="Investing in the Familiar - Tencent"
+              description="This is the first installment of my investing blog 'Investing In The Familiar' where I pick an interesting company and break down areas of growth and business potential. Today, we'll be taking a look at Tencent!"
+              ghLink="https://www.linkedin.com/pulse/investing-familiar-tencent-prafull-sharma"
             />
           </Col>
         </Row>
