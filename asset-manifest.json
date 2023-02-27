@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/personal-site/static/css/main.4dc184c4.css",
+    "main.js": "/personal-site/static/js/main.cddf7dac.js",
+    "static/js/787.1ed0c42c.chunk.js": "/personal-site/static/js/787.1ed0c42c.chunk.js",
+    "static/media/about.png": "/personal-site/static/media/about.81eafc7a5f8789690c79.png",
+    "static/media/home-main.jpg": "/personal-site/static/media/home-main.20fe23a51d96865d3bb2.jpg",
+    "static/media/tencent.png": "/personal-site/static/media/tencent.b5fc795a7d0c2125511a.png",
+    "static/media/palantir.png": "/personal-site/static/media/palantir.c12412f78d24600871b7.png",
+    "static/media/matchmeds.png": "/personal-site/static/media/matchmeds.f160b8c6b381e94d95e2.png",
+    "static/media/Prafull_Sharma_Resume.pdf": "/personal-site/static/media/Prafull_Sharma_Resume.39ae3279011659d103e4.pdf",
+    "static/media/home-bg.jpg": "/personal-site/static/media/home-bg.53e1ff48924762682e23.jpg",
+    "static/media/save.png": "/personal-site/static/media/save.2aa702fded61b9f5e09b.png",
+    "static/media/jumper.png": "/personal-site/static/media/jumper.333929d8b8de11b1117b.png",
+    "static/media/lmnd.png": "/personal-site/static/media/lmnd.7a812aa4a08e46540801.png",
+    "static/media/coursera.png": "/personal-site/static/media/coursera.d9f713367a6ebf815b18.png",
+    "static/media/grocerymule.png": "/personal-site/static/media/grocerymule.9165c9d1cce6974b5512.png",
+    "static/media/nhs.png": "/personal-site/static/media/nhs.6a3183a7318e065992ba.png",
+    "static/media/pre.svg": "/personal-site/static/media/pre.6654379d453790061ab9.svg",
+    "index.html": "/personal-site/index.html",
+    "main.4dc184c4.css.map": "/personal-site/static/css/main.4dc184c4.css.map",
+    "main.cddf7dac.js.map": "/personal-site/static/js/main.cddf7dac.js.map",
+    "787.1ed0c42c.chunk.js.map": "/personal-site/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4dc184c4.css",
+    "static/js/main.cddf7dac.js"
+  ]
+}
