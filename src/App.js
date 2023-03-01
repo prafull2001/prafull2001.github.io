@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Blogs from "./components/Blogs/Blogs";
+import Poetry from "./components/Poetry/Poetry";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import {
@@ -41,6 +42,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/poetry" element={<Poetry />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />

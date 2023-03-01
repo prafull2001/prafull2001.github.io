@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 
-
+import { FiFeather } from "react-icons/fi";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -74,6 +74,16 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/poetry"
+                onClick={() => updateExpanded(false)}
+              >
+                <FiFeather style={{ marginBottom: "2px" }} /> Poetry
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
                 to="/blogs"
                 onClick={() => updateExpanded(false)}
               >
@@ -89,6 +99,16 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/poetry"
+                onClick={() => updateExpanded(false)}
+              >
+                Poetry
               </Nav.Link>
             </Nav.Item>
           </Nav>
