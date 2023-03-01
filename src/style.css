@@ -742,3 +742,17 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+.accordion-item {
+  background-color: #FF5722 !important;
+
+}
+
+.accordion-body{
+  text-align: left;
+  color: #000000;
+}
+
+.accordion{
+  padding-bottom: 100px;
+}
