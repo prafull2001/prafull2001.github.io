@@ -102,15 +102,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/poetry"
-                onClick={() => updateExpanded(false)}
-              >
-                Poetry
-              </Nav.Link>
-            </Nav.Item>
+            
           </Nav>
         </Navbar.Collapse>
       </Container>
