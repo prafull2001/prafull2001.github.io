@@ -18,11 +18,18 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ReactDOM from 'react-dom';
+import ReactGA from 'react-ga';
+const TRACKING_ID = "UA-201819334-1"; // OUR_TRACKING_ID
+
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
   const [load, upadateLoad] = useState(true);
 
   useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
     const timer = setTimeout(() => {
       upadateLoad(false);
     }, 1200);
