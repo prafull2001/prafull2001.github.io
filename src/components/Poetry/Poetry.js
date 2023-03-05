@@ -90,7 +90,7 @@ function Poetry() {
                         with their torrential whooping and breezy snickering,
                         <br></br>
                         <br></br>
-                        the oaks gavze below with sympathy and adoration.
+                        the oaks gaze below with sympathy and adoration.
                         <br></br>
                         <br></br>
                         "We have much to teach" they offer, "will you listen?"
