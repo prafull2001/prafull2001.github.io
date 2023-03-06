@@ -35,16 +35,16 @@ function Poetry() {
                         <br></br>
                         <br></br>
                         <br></br>
-                        Each syllable
+                        Each syllable boomed
                         <br></br>
                         <br></br>
-                        boomed off the script of life.
+                        off the script of life.
                         <br></br>
                         <br></br>
-                        My time dribbles
+                        My time dribbles at the chin
                         <br></br>
                         <br></br>
-                        at the chin of a cosmic God,
+                        of a cosmic God,
                         <br></br>
                         <br></br>
                         expounding my Mahabharata,

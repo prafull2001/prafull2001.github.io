@@ -62,14 +62,13 @@ button:focus {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #E65100;
+  background: #FF9800;
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #FF9800
-  ;
+  background: #E65100;
   border-radius: 12px;
 }
 

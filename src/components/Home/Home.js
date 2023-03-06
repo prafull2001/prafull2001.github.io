@@ -22,14 +22,14 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hey There!{" "}
+                Hey! I'm Prafull.{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
               <h1 className="heading-name">
-                I'm Prafull.
+                Check out <Link to="/poetry" className="purple" style={{textDecoration: 'none', fontSize: '1.25em'}}>my poetry.</Link>
               </h1>
 
               <a href="mailto:prafull2001@gmail.com"
@@ -77,13 +77,6 @@ function Home() {
         <Home2 />
         
       </Container>
-      
-      
-      
-
-
-      
-      
     </section>
   );
 }
