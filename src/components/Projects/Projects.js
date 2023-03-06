@@ -21,10 +21,9 @@ function Projects() {
               imgPath={grocerymule}
               isBlog={false}
               title="GroceryMule "
-              description="Mobile application allowing students to shop for groceries with roommmates. Make a list, add your items, and take a picture of the receipt at the end to get accurate totals. Created using Flutter and Firebase "
+              description= "Doing groceries for my roommates and I became frustrating, so some friends and I made an app to do the boring stuff for us. GroceryMule allows you to make collaborative shopping lists and conveniently request payments from others by taking a picture of your receipt. Created using Flutter and Firebase "
               ghLink="https://github.com/prafull2001/grocerymule-website"
               demoLink="https://grocerymule.net/"
-
             />
           </Col>
 
@@ -44,9 +43,9 @@ function Projects() {
               imgPath={matchmeds}
               isBlog={false}
               title="MatchMeds"
-              description="Won $11,000 at 2019 Diamond Challenge. An online platform connecting patients to a network of safety-net clinics. Full stack web application written using the MERN stack."
+              description="After reading about a young man who died rationing his insulin due to soaring healthcare prices, I was inspired to help democratize affordable healthcare solutions to those who don't qualify for traditional healthcare plans. MatchMeds is an online platform connecting patients to a network of safety-net clinics that provide prescriptions on sliding-fee scales.  Won $11,000 at 2019 Diamond Challenge.  Full stack web application written using the MERN stack."
               ghLink="https://github.com/prafull2001/matchmeds-demo-app"
-              demoLink="https://diamondchallenge.org/2019/06/diamond-challenge-highlight-matchmeds/"
+              demoLink="https://vimeo.com/344841700?embedded=true&source=vimeo_logo&owner=14723230"
             />
           </Col>
 
@@ -55,7 +54,7 @@ function Projects() {
               imgPath={nhs}
               isBlog={false}
               title="NHS Tutoring App"
-              description="Mobile app connecting National Honor Society members to students seeking peer mentorship Written using Swift and Firebase for realtime chatroom functionality"
+              description="In high school, I reached out to the National Honor Society to prepare for a calculus test. Unfortunately, the sign-up process was disorganized & I received a delayed response. Realizing the need for a better way for students to access the support they require, I developed an iPhone app streamlining the sign-up process. The app provided students direct access to their tutors via a chatroom function, ensuring seamless communication. Written using Swift and Firebase."
               ghLink="https://github.com/prafull2001/NHS-Student"
               demoLink="https://devpost.com/software/nhs-tutoring-app"
             />
@@ -66,9 +65,9 @@ function Projects() {
               imgPath={jumper}
               isBlog={false}
               title="JUMP3R"
-              description="Simple 2D platformer jumping game. Written in Lua using Corona Labs."
+              description="One of my first ever apps published on the iOS Appstore! A simple 2D platformer jumping game, JUMP3R recieved over 5,000 downloads worldwide with no advertisement. Written in the Corona Labs game engine using Lua."
               ghLink="https://github.com/ByteMeClub/Jumper"
-              // demoLink="https://devpost.com/software/nhs-tutoring-app"
+              demoLink="https://appadvice.com/app/jump3r/1212154687"
             />
           </Col>
           
