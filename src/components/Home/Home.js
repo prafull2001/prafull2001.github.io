@@ -39,7 +39,6 @@ function Home() {
                 <SiGmail className="contact-icons"/>
               </a>
 
-
            
               <a href="https://open.spotify.com/user/prafull2001"
                 target="_blank" 
