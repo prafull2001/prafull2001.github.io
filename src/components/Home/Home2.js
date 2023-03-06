@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
@@ -20,6 +19,7 @@ function Home2() {
                 I have experience developing full stack websites and mobile applications.
                 I love building things that provide tangible value in people's daily lives, however small the impact.
             </p>
+            
           </Col>
         </Row>
         
