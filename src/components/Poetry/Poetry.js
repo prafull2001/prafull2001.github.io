@@ -11,6 +11,43 @@ function Poetry() {
         <h1 style={{paddingBottom: "100px"}}>Poems by Me</h1>
 
         <h2 style={{ fontSize: "2em", textAlign: "left", paddingLeft: "40px" }}>
+            Sometimes <span className="purple"> I Dream </span> 
+            </h2>
+        <Accordion defaultActiveKey="0" style={{ paddingLeft: "40px" }}>
+            <Accordion.Item eventKey="1">
+                <Accordion.Header>Expand to read</Accordion.Header>
+                    <Accordion.Body>
+                        Sometimes I scribble words,
+                        <br></br>
+                        <br></br>
+                        and ask you what they mean -
+                        <br></br>
+                        <br></br>
+                        the only time that they make sense
+                        <br></br>
+                        <br></br>
+                        is when I fall asleep.
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        For in my dreams I’m dead, 
+                        <br></br>
+                        <br></br>
+                        hindered when I’m alive,
+                        <br></br>
+                        <br></br>
+                        talking to souls and memories
+                        <br></br>
+                        <br></br>
+                        for sleep is death being shy.
+                    </Accordion.Body>
+            </Accordion.Item>
+        </Accordion>
+
+
+
+        <h2 style={{ fontSize: "2em", textAlign: "left", paddingLeft: "40px" }}>
             Lessons from the <span className="purple"> Mahabharata </span>
             </h2>
 
