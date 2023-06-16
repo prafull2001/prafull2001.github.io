@@ -29,7 +29,7 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                Check out <Link to="/poetry" className="purple" style={{textDecoration: 'none', fontSize: '1.25em'}}>my poetry.</Link>
+                <Link to="/poetry" className="purple" style={{textDecoration: 'none', fontSize: '1.25em'}}>I write poetry</Link> when I'm inspired & to express myself.
               </h1>
 
               <a href="mailto:prafull2001@gmail.com"
