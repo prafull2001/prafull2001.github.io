@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+import abtImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 import Type from "./Type";
 
@@ -32,7 +32,7 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <img src={abtImg} alt="about" className="img-fluid" style={{ maxHeight: "450px", borderRadius: "50px" }} />
           </Col>
         </Row>
         
