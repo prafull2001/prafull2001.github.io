@@ -11,6 +11,41 @@ function Poetry() {
         <h1 style={{paddingBottom: "100px"}}>Poems by Me</h1>
 
         <h2 style={{ fontSize: "2em", textAlign: "left", paddingLeft: "40px" }}>
+            The <span className="purple"> Fledgling</span> 
+            </h2>
+        <Accordion defaultActiveKey="0" style={{ paddingLeft: "40px" }}>
+            <Accordion.Item eventKey="1">
+                <Accordion.Header>Expand to read</Accordion.Header>
+                    <Accordion.Body>
+                        Nestled in the soft moss
+                        <br></br>
+                        <br></br>
+                        in a clumsy heap
+                        <br></br>
+                        <br></br>
+                        the fledgling looks upward
+                        <br></br>
+                        <br></br>
+                        and remembers home --
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        familiar chattering,
+                        <br></br>
+                        <br></br>
+                        the symphony of life
+                        <br></br>
+                        <br></br>
+                        with daily cresendos
+                        <br></br>
+                        <br></br>
+                        of love.
+                    </Accordion.Body>
+            </Accordion.Item>
+        </Accordion>
+
+        <h2 style={{ fontSize: "2em", textAlign: "left", paddingLeft: "40px" }}>
             What's <span className="purple"> Important?</span> 
             </h2>
         <Accordion defaultActiveKey="0" style={{ paddingLeft: "40px" }}>
