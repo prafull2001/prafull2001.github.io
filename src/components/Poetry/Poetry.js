@@ -281,39 +281,71 @@ function Poetry() {
 }
 
 const poems = [
-  {
-    title: "The Fledgling",
-    content: `
-    Nestled in the soft moss<br/>
-    in a clumsy heap<br/>
-    the fledgling looks upward<br/>
-    and remembers home --<br/>
-    <br></br>
-    familiar chattering,<br/>
-    the symphony of life<br/>
-    with daily cresendos<br/>
-    of love.
-    `,
-    date: "8/9/23",
-  },
-  {
-    title: "What's Important?",
-    content: `
-      What's more important,<br/>
-      the flower or the soil that grows it?<br/>
-      The secret you were told,<br/>
-      or the number of people who know it?<br/>
-      <br/>
-      <br/>
-      The way your thoughts flow,<br/>
-      or the power to control it?<br/>
-      Native to the first world,<br/>
-      concepts like these are foreign.
-    `,
-    date: "7/10/23",
-  },
+    {
+        title: "Ganandorf",
+        content: `
+            True cruelty<br/>
+            smiles in your face,<br/>
+            slips off your gaurd<br/>
+            and lays beside.<br/>
+            <br/>
+            <br/>
+            It explains past victims<br/>
+            and unique dispositions,<br/>
+            masking the chambering<br/>
+            of another heartbreak.
+        `,
+        date: "12/11/23",
+    },
+    {
+        title: "Migratory Birds",
+        content: `
+            Does thou tire,<br/>
+            of migration<br/>
+            and its generosity<br/>
+            of unchanged change?<br/>
+            <br/>
+            <br/>
+            When beacons translate<br/>
+            pregnant abodes<br/>
+            are left barren<br/>
+            expecting me back.
+        `,
+        date: "12/6/23",
+    },
+    {
+        title: "The Fledgling",
+        content: `
+        Nestled in the soft moss<br/>
+        in a clumsy heap<br/>
+        the fledgling looks upward<br/>
+        and remembers home --<br/>
+        <br></br>
+        familiar chattering,<br/>
+        the symphony of life<br/>
+        with daily cresendos<br/>
+        of love.
+        `,
+        date: "8/9/23",
+    },
+    {
+        title: "What's Important?",
+        content: `
+        What's more important,<br/>
+        the flower or the soil that grows it?<br/>
+        The secret you were told,<br/>
+        or the number of people who know it?<br/>
+        <br/>
+        <br/>
+        The way your thoughts flow,<br/>
+        or the power to control it?<br/>
+        Native to the first world,<br/>
+        concepts like these are foreign.
+        `,
+        date: "7/10/23",
+    },
   
-  {
+    {
     title: "Lessons from the Mahabharata",
     content: `
         If life was a story,</br>
@@ -330,57 +362,57 @@ const poems = [
         the journey behind details and reasons.
     `,
     date: "2/19/23",
-  },
-  {
-    title: "Sometimes I Dream",
-    content: `
-        Sometimes I scribble words,<br/>
-        and ask you what they mean -<br/>
-        the only time that they make sense<br/>
-        is when I fall asleep.<br/>
-        <br/>
-        <br/>
-        For in my dreams I’m dead,<br/>
-        hindered when I’m alive,<br/>
-        talking to souls and memories<br/>
-        for sleep is death being shy.  
-    `,
-    date: "5/1/22",
-  },
-  {
-    title: "The Kwisatz Haderach",
-    content: `
-        Cinnamon-reeking flames</br>
-        temper the sands of time</br>
-        to make glass cages</br>
-        for my trinocular focus
-    `,
-    date: "1/30/2022",
-  },
-  {
-    title: "Grandfathers of the Forest",
-    content: `
-        The oaks bend and groan</br></br>
-        leaning on splintery canes as they sway.</br></br>
-        With their torrential whooping and breezy snickering,</br></br>
-        the oaks gaze below with sympathy and adoration --</br></br>
-        "We have much to teach" they offer, "will you listen?"</br></br>
-        But the unsuspecting pupils disappear after a summer's growth,</br></br>
-        yet wiser still the oaks grow, unbothered by the neglect.</br></br>
-        The soft crackling of weathered bones fills the Forest</br></br>
-        as they re-extend their gracious offer to new generations.
-    `,
-    date: "10/20/21",
-  },
-  {
-    title: "Morals (a haiku)",
-    content: `
-        Don't preach your morals</br>
-        til you have money to fund</br>
-        your own temptations.
-    `,
-    date: "4/2/21",
-  },
+    },
+    {
+        title: "Sometimes I Dream",
+        content: `
+            Sometimes I scribble words,<br/>
+            and ask you what they mean -<br/>
+            the only time that they make sense<br/>
+            is when I fall asleep.<br/>
+            <br/>
+            <br/>
+            For in my dreams I’m dead,<br/>
+            hindered when I’m alive,<br/>
+            talking to souls and memories<br/>
+            for sleep is death being shy.  
+        `,
+        date: "5/1/22",
+    },
+    {
+        title: "The Kwisatz Haderach",
+        content: `
+            Cinnamon-reeking flames</br>
+            temper the sands of time</br>
+            to make glass cages</br>
+            for my trinocular focus
+        `,
+        date: "1/30/2022",
+    },
+    {
+        title: "Grandfathers of the Forest",
+        content: `
+            The oaks bend and groan</br></br>
+            leaning on splintery canes as they sway.</br></br>
+            With their torrential whooping and breezy snickering,</br></br>
+            the oaks gaze below with sympathy and adoration --</br></br>
+            "We have much to teach" they offer, "will you listen?"</br></br>
+            But the unsuspecting pupils disappear after a summer's growth,</br></br>
+            yet wiser still the oaks grow, unbothered by the neglect.</br></br>
+            The soft crackling of weathered bones fills the Forest</br></br>
+            as they re-extend their gracious offer to new generations.
+        `,
+        date: "10/20/21",
+    },
+    {
+        title: "Morals (a haiku)",
+        content: `
+            Don't preach your morals</br>
+            til you have money to fund</br>
+            your own temptations.
+        `,
+        date: "4/2/21",
+    },
   
   
 ];
