@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import abtImg from "../../Assets/about.png";
+import abtImg from "../../Assets/about.jpg";
 import Toolstack from "./Toolstack";
 import Type from "./Type";
 
