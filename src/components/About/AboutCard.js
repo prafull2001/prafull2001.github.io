@@ -8,11 +8,16 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            My passion for computer science started with my love of video games.
-            <br />I played them so often, I decided to found a videogame development club at my highschool where we released 2 games on the iOS Appstore.
+          Since I was a kid, I have  enjoyed finding ways to give back to my community. For me, I started by learning JavaScript in 7th grade to create an app for an animal shelter in my township.
+          <br />
+          <br />
+            After a few months of coding, I was featured in a local newspaper for my work & was thrilled by the positive impact the app had on the staff.
             <br />
             <br />
-            Since then, I've worked on a lot of interesting projects in areas such as <span className="purple">cloud</span>, <span className="purple">healthcare</span>, <span className="purple">neurosurgery</span>, and <span className="purple">commerce</span>.
+            I’ve been pursuing that sensation ever since which has driven me to develop  applications tackling issues I'm connected with, particularly in fields like Medicare and finance.
+            <br />
+            <br />
+            
           </p>
           
         </blockquote>

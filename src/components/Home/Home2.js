@@ -13,14 +13,16 @@ function Home2() {
             </h1>
 
             <p className="home-about-body" style={{ textAlign: "left" }}>
-                I'm a SWE @ Dell Technologies working in the High Performance Computing and AI Innovations team.
+                I'm a SWE at Dell Technologies living in the SF Bay Area.
                 <br />
                 <br />
-                I graduated from the University of Wisconsin Madison recently in Spring, 2023 - Roll Badge 🦡 ⚪️🔴.
+                I am passionate about building things that provide tangible value in people's daily lives, however small the impact.
                 <br />
                 <br />
-                I have experience developing full stack websites and mobile applications.
-                I love building things that provide tangible value in people's daily lives, however small the impact.
+                I am a certified <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/805b30c61c894f59a731ccb9775c1eaf" target="_blank" rel="noopener noreferrer" className="purple">AWS Developer Associate</a>.
+                <br />
+                <br />
+                In my freetime I enjoy lifting weights, playing pickleball, hiking and adding to my growing vinyl collection. 
             </p>
             
           </Col>
