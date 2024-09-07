@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.d1dcd08d.css",
-    "main.js": "/static/js/main.4bc9a3a3.js",
+    "main.js": "/static/js/main.9b13aac9.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/about.png": "/static/media/about.81eafc7a5f8789690c79.png",
+    "static/media/about.jpg": "/static/media/about.071064a69f4153f02b59.jpg",
     "static/media/home-main.jpg": "/static/media/home-main.a51bede84efa2f76c900.jpg",
     "static/media/tencent.png": "/static/media/tencent.b5fc795a7d0c2125511a.png",
     "static/media/palantir.png": "/static/media/palantir.c12412f78d24600871b7.png",
     "static/media/matchmeds.png": "/static/media/matchmeds.f160b8c6b381e94d95e2.png",
-    "static/media/Prafull_Sharma_Resume.pdf": "/static/media/Prafull_Sharma_Resume.39ae3279011659d103e4.pdf",
     "static/media/home-bg.jpg": "/static/media/home-bg.53e1ff48924762682e23.jpg",
+    "static/media/Prafull_Sharma_Resume.pdf": "/static/media/Prafull_Sharma_Resume.da0dd1fea5fd08a91cda.pdf",
     "static/media/save.png": "/static/media/save.2aa702fded61b9f5e09b.png",
     "static/media/jumper.png": "/static/media/jumper.333929d8b8de11b1117b.png",
     "static/media/lmnd.png": "/static/media/lmnd.7a812aa4a08e46540801.png",
@@ -19,11 +19,11 @@
     "index.html": "/index.html",
     "static/media/pre.svg": "/static/media/pre.6654379d453790061ab9.svg",
     "main.d1dcd08d.css.map": "/static/css/main.d1dcd08d.css.map",
-    "main.4bc9a3a3.js.map": "/static/js/main.4bc9a3a3.js.map",
+    "main.9b13aac9.js.map": "/static/js/main.9b13aac9.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d1dcd08d.css",
-    "static/js/main.4bc9a3a3.js"
+    "static/js/main.9b13aac9.js"
   ]
 }
