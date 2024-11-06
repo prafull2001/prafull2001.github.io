@@ -7,6 +7,7 @@ import shell from "../../Assets/Projects/shell.png";
 import jumper from "../../Assets/Projects/jumper.png";
 import nhs from "../../Assets/Projects/nhs.png";
 import save from "../../Assets/Projects/save.png";
+import stem from "../../Assets/Projects/stemplayer.jpg"
 
 function Projects() {
   return (
@@ -16,6 +17,16 @@ function Projects() {
           My past projects
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={stem}
+              isBlog={false}
+              title="Stem Player"
+              description= "A fun toy I put together over a weekend. Created a music stem/DJ device. Separates vocals, drums, bass and melody from any uploaded audio and maps them to 4 force sensitive resistors activated by pressure from fingers, making for endless amateur DJ fun (at least for me!)"
+              ghLink="https://github.com/prafull2001/stem-glove"
+              demoLink="https://www.youtube.com/watch?v=b77IK56quzs&ab_channel=PrafullSharma"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={grocerymule}
