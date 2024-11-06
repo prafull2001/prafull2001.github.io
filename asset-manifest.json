@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.d1dcd08d.css",
-    "main.js": "/static/js/main.9b13aac9.js",
+    "main.js": "/static/js/main.1a143286.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/stemplayer.jpg": "/static/media/stemplayer.f11dc346e998167bf45a.jpg",
     "static/media/about.jpg": "/static/media/about.071064a69f4153f02b59.jpg",
     "static/media/home-main.jpg": "/static/media/home-main.a51bede84efa2f76c900.jpg",
     "static/media/tencent.png": "/static/media/tencent.b5fc795a7d0c2125511a.png",
@@ -19,11 +20,11 @@
     "index.html": "/index.html",
     "static/media/pre.svg": "/static/media/pre.6654379d453790061ab9.svg",
     "main.d1dcd08d.css.map": "/static/css/main.d1dcd08d.css.map",
-    "main.9b13aac9.js.map": "/static/js/main.9b13aac9.js.map",
+    "main.1a143286.js.map": "/static/js/main.1a143286.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d1dcd08d.css",
-    "static/js/main.9b13aac9.js"
+    "static/js/main.1a143286.js"
   ]
 }
