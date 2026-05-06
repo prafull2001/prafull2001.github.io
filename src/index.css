@@ -1,8 +1,115 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-body {
+:root {
+  /* Warm, organic color palette */
+  --bg-primary: #f8f5f0;
+  --bg-secondary: #f0ece5;
+  --bg-tertiary: #e8e3db;
+  --bg-card: #ffffff;
+  --bg-card-hover: #fdfcfa;
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(0, 0, 0, 0.15);
+  --text-primary: #1a1a17;
+  --text-secondary: #5c5c52;
+  --text-muted: #8a897e;
+  --accent: #b8860b;
+  --accent-light: #d4a017;
+  --accent-glow: rgba(184, 134, 11, 0.08);
+  --accent-secondary: #8b6914;
+  --accent-secondary-glow: rgba(139, 105, 20, 0.08);
+  --warm-highlight: #fef3e2;
+
+  /* Typography */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+
+  /* Spacing */
+  --section-padding: clamp(80px, 12vh, 140px);
+  --container-max: 1200px;
+  --container-padding: clamp(20px, 5vw, 80px);
+
+  /* Transitions */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-flow: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft: cubic-bezier(0.32, 0.72, 0, 1);
+  --duration-fast: 0.2s;
+  --duration-normal: 0.4s;
+  --duration-slow: 0.8s;
+  --duration-cinematic: 1.2s;
+}
+
+* {
   margin: 0;
-  font-family: "Raleway", serif !important;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) var(--bg-primary);
+  font-size: 20px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--text-primary);
+}
+
+h1, h2 {
+  font-weight: 480;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  font-variation-settings: 'opsz' 96, 'SOFT' 50, 'WONK' 1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Subtle warm paper texture */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
 }

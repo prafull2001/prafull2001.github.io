@@ -3,26 +3,78 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/homeicon.jpg" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Prafull Sharma's personal site" />
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  
+  <meta name="theme-color" content="#0a0a0b" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Prafull Sharma | Software Engineer, Builder, Writer</title>
+  <meta name="title" content="Prafull Sharma | Software Engineer, Builder, Writer" />
+  <meta name="description" content="Software engineer and founder of Spool. UW-Madison alum building products at the intersection of technology and human behavior. View my projects, poetry, and more." />
+  <meta name="keywords" content="Prafull Sharma, Praful Sharma, software engineer, Spool app, UW Madison, developer, portfolio, poetry, screen time, iOS developer" />
+  <meta name="author" content="Prafull Sharma" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://prafullsharma.me/" />
+
+  <!-- Alternate spellings for SEO -->
+  <meta name="abstract" content="Prafull Sharma (also known as Praful Sharma) - Software Engineer, Founder of Spool, UW-Madison Graduate" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://prafullsharma.me/" />
+  <meta property="og:title" content="Prafull Sharma | Software Engineer, Builder, Writer" />
+  <meta property="og:description" content="Software engineer and founder of Spool. Building products at the intersection of technology and human behavior." />
+  <meta property="og:image" content="https://prafullsharma.me/og-image.png" />
+  <meta property="og:site_name" content="Prafull Sharma" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://prafullsharma.me/" />
+  <meta name="twitter:title" content="Prafull Sharma | Software Engineer, Builder, Writer" />
+  <meta name="twitter:description" content="Software engineer and founder of Spool. Building products at the intersection of technology and human behavior." />
+  <meta name="twitter:image" content="https://prafullsharma.me/og-image.png" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Prafull Sharma",
+    "alternateName": ["Praful Sharma", "Prafull"],
+    "url": "https://prafullsharma.me",
+    "image": "https://prafullsharma.me/og-image.png",
+    "jobTitle": "Software Engineer",
+    "description": "Software engineer and founder of Spool. UW-Madison alum building at the intersection of technology and human behavior.",
+    "sameAs": [
+      "https://github.com/prafull2001",
+      "https://www.linkedin.com/in/prafull-sharma",
+      "https://apps.apple.com/us/app/spool-screen-time-control/id6749428484"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Wisconsin-Madison",
+      "sameAs": "https://www.wisc.edu"
+    },
+    "knowsAbout": ["Software Engineering", "iOS Development", "Screen Time Management", "Poetry", "Full Stack Development"],
+    "founder": {
+      "@type": "Organization",
+      "name": "Spool",
+      "url": "https://www.thespoolapp.com"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- SPA Redirect for GitHub Pages -->
   <script type="text/javascript">
-    // Single Page Apps for GitHub Pages
-    // MIT License
-    // https://github.com/rafgraph/spa-github-pages
-    // This script checks to see if a redirect is present in the query string,
-    // converts it back into the correct url and adds it to the
-    // browser's history using window.history.replaceState(...),
-    // which won't cause the browser to attempt to load the new url.
-    // When the single page app is loaded further down in this file,
-    // the correct url will be waiting in the browser's history for
-    // the single page app to route accordingly.
     (function(l) {
       if (l.search[1] === '/' ) {
-        var decoded = l.search.slice(1).split('&').map(function(s) { 
+        var decoded = l.search.slice(1).split('&').map(function(s) {
           return s.replace(/~and~/g, '&')
         }).join('?');
         window.history.replaceState(null, null,
@@ -31,13 +83,8 @@
       }
     }(window.location))
   </script>
-  
-  <title>Prafull's Website</title>
-  <meta name="description" content="Prafull Sharma's portfolio website">
 
-  <!-- Google / Search Engine Tags -->
-  <meta itemprop="name" content="Prafull Sharma">
-  
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 </head>
 
 <body>

@@ -1,420 +1,238 @@
-// import React from 'react';
-// import { Container, Row } from "react-bootstrap";
-// import { Accordion, Card, Button } from 'react-bootstrap';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { HiChevronDown } from "react-icons/hi";
 
+const poems = [
+  {
+    title: "Ganandorf",
+    date: "December 2023",
+    content: `True cruelty
+smiles in your face,
+slips off your guard
+and lays beside.
 
+It explains past victims
+and unique dispositions,
+masking the chambering
+of another heartbreak.`,
+  },
+  {
+    title: "Migratory Birds",
+    date: "December 2023",
+    content: `Does thou tire,
+of migration
+and its generosity
+of unchanged change?
 
-// function Poetry() {
-//   return (
-//     <Container fluid className="about-section">
-        
-//         <h1 style={{paddingBottom: "100px"}}>Poems by Me</h1>
+When beacons translate
+pregnant abodes
+are left barren
+expecting me back.`,
+  },
+  {
+    title: "The Fledgling",
+    date: "August 2023",
+    content: `Nestled in the soft moss
+in a clumsy heap
+the fledgling looks upward
+and remembers home —
 
-//         <h2 style={{ fontSize: "2em", textAlign: "left", paddingLeft: "100px" }}>
-//             The <span className="purple"> Fledgling</span> 
-//             </h2>
-//         <Accordion defaultActiveKey="0" style={{ paddingLeft: "100px" }}>
-//             <Accordion.Item eventKey="1">
-//                 <Accordion.Header>Expand to read</Accordion.Header>
-//                     <Accordion.Body>
-//                         Nestled in the soft moss
-//                         <br></br>
-//                         <br></br>
-//                         in a clumsy heap
-//                         <br></br>
-//                         <br></br>
-//                         the fledgling looks upward
-//                         <br></br>
-//                         <br></br>
-//                         and remembers home --
-//                         <br></br>
-//                         <br></br>
-//                         <br></br>
-//                         <br></br>
-//                         familiar chattering,
-//                         <br></br>
-//                         <br></br>
-//                         the symphony of life
-//                         <br></br>
-//                         <br></br>
-//                         with daily cresendos
-//                         <br></br>
-//                         <br></br>
-//                         of love.
-//                     </Accordion.Body>
-//             </Accordion.Item>
-//         </Accordion>
+familiar chattering,
+the symphony of life
+with daily crescendos
+of love.`,
+  },
+  {
+    title: "What's Important?",
+    date: "July 2023",
+    content: `What's more important,
+the flower or the soil that grows it?
+The secret you were told,
+or the number of people who know it?
 
-//         <h2 style={{ fontSize: "2em", textAlign: "left", paddingLeft: "100px" }}>
-//             What's <span className="purple"> Important?</span> 
-//             </h2>
-//         <Accordion defaultActiveKey="0" style={{ paddingLeft: "100px" }}>
-//             <Accordion.Item eventKey="1">
-//                 <Accordion.Header>Expand to read</Accordion.Header>
-//                     <Accordion.Body>
-//                         What's more important,
-//                         <br></br>
-//                         <br></br>
-//                         the flower or the soil that grows it?
-//                         <br></br>
-//                         <br></br>
-//                         The secret you were told, 
-//                         <br></br>
-//                         <br></br>
-//                         or the number of people who know it?
-//                         <br></br>
-//                         <br></br>
-//                         <br></br>
-//                         <br></br>
-//                         The way your thoughts flow,
-//                         <br></br>
-//                         <br></br>
-//                         or the power to control it?
-//                         <br></br>
-//                         <br></br>
-//                         Native to the first world,
-//                         <br></br>
-//                         <br></br>
-//                         concepts like these are foreign.
-//                     </Accordion.Body>
-//             </Accordion.Item>
-//         </Accordion>
+The way your thoughts flow,
+or the power to control it?
+Native to the first world,
+concepts like these are foreign.`,
+  },
+  {
+    title: "Lessons from the Mahabharata",
+    date: "February 2023",
+    content: `If life was a story,
+then years are the sentences
+enunciated by the words
+of everyday living.
 
-//         <h2 style={{ fontSize: "2em", textAlign: "left", paddingLeft: "100px" }}>
-//             Sometimes <span className="purple"> I Dream </span> 
-//             </h2>
-//         <Accordion defaultActiveKey="0" style={{ paddingLeft: "100px" }}>
-//             <Accordion.Item eventKey="1">
-//                 <Accordion.Header>Expand to read</Accordion.Header>
-//                     <Accordion.Body>
-//                         Sometimes I scribble words,
-//                         <br></br>
-//                         <br></br>
-//                         and ask you what they mean -
-//                         <br></br>
-//                         <br></br>
-//                         the only time that they make sense
-//                         <br></br>
-//                         <br></br>
-//                         is when I fall asleep.
-//                         <br></br>
-//                         <br></br>
-//                         <br></br>
-//                         <br></br>
-//                         For in my dreams I’m dead, 
-//                         <br></br>
-//                         <br></br>
-//                         hindered when I’m alive,
-//                         <br></br>
-//                         <br></br>
-//                         talking to souls and memories
-//                         <br></br>
-//                         <br></br>
-//                         for sleep is death being shy.
-//                     </Accordion.Body>
-//             </Accordion.Item>
-//         </Accordion>
+And in between these words
+lie the letters of emotions,
+each syllable boomed
+off the script of life.
 
+My time dribbles at the chin
+of a cosmic God
+expounding my Mahabharata,
+the journey behind details and reasons.`,
+  },
+  {
+    title: "Sometimes I Dream",
+    date: "May 2022",
+    content: `Sometimes I scribble words,
+and ask you what they mean —
+the only time that they make sense
+is when I fall asleep.
 
+For in my dreams I'm dead,
+hindered when I'm alive,
+talking to souls and memories
+for sleep is death being shy.`,
+  },
+  {
+    title: "The Kwisatz Haderach",
+    date: "January 2022",
+    content: `Cinnamon-reeking flames
+temper the sands of time
+to make glass cages
+for my trinocular focus`,
+  },
+  {
+    title: "Grandfathers of the Forest",
+    date: "October 2021",
+    content: `The oaks bend and groan
+leaning on splintery canes as they sway.
 
-//         <h2 style={{ fontSize: "2em", textAlign: "left", paddingLeft: "100px" }}>
-//             Lessons from the <span className="purple"> Mahabharata </span>
-//             </h2>
+With their torrential whooping and breezy snickering,
+the oaks gaze below with sympathy and adoration —
 
-//         <Accordion defaultActiveKey="0" style={{ paddingLeft: "100px" }}>
-//             <Accordion.Item eventKey="1">
-//                 <Accordion.Header>Expand to read</Accordion.Header>
-//                     <Accordion.Body>
-//                         If life was a story,
-//                         <br></br>
-//                         <br></br>
-//                         then years are the sentences
-//                         <br></br>
-//                         <br></br>
-//                         enunciated by the words of everyday living.
-//                         <br></br>
-//                         <br></br>
-//                         And in between these words,
-//                         <br></br>
-//                         <br></br>
-//                         lie the letters of emotions.
-//                         <br></br>
-//                         <br></br>
-//                         <br></br>
-//                         <br></br>
-//                         Each syllable boomed
-//                         <br></br>
-//                         <br></br>
-//                         off the script of life.
-//                         <br></br>
-//                         <br></br>
-//                         My time dribbles at the chin
-//                         <br></br>
-//                         <br></br>
-//                         of a cosmic God,
-//                         <br></br>
-//                         <br></br>
-//                         expounding my Mahabharata,
-//                         <br></br>
-//                         <br></br>
-//                         the journey behind details and reasons.
-//                     </Accordion.Body>
-//             </Accordion.Item>
-//         </Accordion>
-        
-//         <h2 style={{ fontSize: "2em", textAlign: "left", paddingLeft: "100px" }}>
-//             <span className="purple"> Morals </span> (a haiku)
-//             </h2>
+"We have much to teach" they offer, "will you listen?"
 
-//         <Accordion defaultActiveKey="0" style={{ paddingLeft: "100px" }}>
-//             <Accordion.Item eventKey="1">
-//                 <Accordion.Header>Expand to read</Accordion.Header>
-//                     <Accordion.Body>
-//                         Don't preach your morals
-//                         <br></br>
-//                         <br></br>
-//                         til you have money to fund
-//                         <br></br>
-//                         <br></br>
-//                         your own temptations.
-//                     </Accordion.Body>
-//             </Accordion.Item>
-//         </Accordion>
+But the unsuspecting pupils disappear after a summer's growth,
+yet wiser still the oaks grow, unbothered by the neglect.
 
-//         <h2 style={{ fontSize: "2em", textAlign: "left", paddingLeft: "100px" }}>
-//             <span className="purple"> Grandfathers </span> of the Forest
-//             </h2>
-//         <Accordion defaultActiveKey="0" style={{ paddingLeft: "100px" }}>
-//             <Accordion.Item eventKey="1">
-//                 <Accordion.Header>Expand to read</Accordion.Header>
-//                     <Accordion.Body>
-//                         The oaks bend and groan,
-//                         <br></br>
-//                         <br></br>
-//                         leaning on splintery canes as they push and sway,
-//                         <br></br>
-//                         <br></br>
-//                         with their torrential whooping and breezy snickering,
-//                         <br></br>
-//                         <br></br>
-//                         the oaks gaze below with sympathy and adoration.
-//                         <br></br>
-//                         <br></br>
-//                         "We have much to teach" they offer, "will you listen?"
-//                         <br></br>
-//                         <br></br>
-//                         But the unsuspecting pupils disappear after a summer's growth,
-//                         <br></br>
-//                         <br></br>
-//                         yet wiser still the oaks grow, unbothered by the neglect.
-//                         <br></br>
-//                         <br></br>
-//                         The soft crackling of weathered bones fills the Forest
-//                         <br></br>
-//                         <br></br>
-//                         as they re-extend their gracious offer to new generations.
+The soft crackling of weathered bones fills the Forest
+as they re-extend their gracious offer to new generations.`,
+  },
+  {
+    title: "Morals",
+    date: "April 2021",
+    content: `Don't preach your morals
+til you have money to fund
+your own temptations.`,
+  },
+];
 
-//                     </Accordion.Body>
-//             </Accordion.Item>
-//         </Accordion>
+function PoemCard({ poem, index }) {
+  const [isOpen, setIsOpen] = useState(false);
 
-//         <h2 style={{ fontSize: "2em", textAlign: "left", paddingLeft: "100px" }}>
-//             The <span className="purple"> Kwisatz Haderach </span> 
-//             </h2>
-//         <Accordion defaultActiveKey="0" style={{ paddingLeft: "100px" }}>
-//             <Accordion.Item eventKey="1">
-//                 <Accordion.Header>Expand to read</Accordion.Header>
-//                     <Accordion.Body>
-//                         Cinnamon-reeking flames
-//                         <br></br>
-//                         <br></br>
-//                         temper the sands of time
-//                         <br></br>
-//                         <br></br>
-//                         to make glass cages
-//                         <br></br>
-//                         <br></br>
-//                         for my trinocular focus
-//                     </Accordion.Body>
-//             </Accordion.Item>
-//         </Accordion>
-
-        
-//     </Container>
-//   );
-// }
-
-// export default Poetry;
-
-
-import React from 'react';
-import { Container, Row } from "react-bootstrap";
-import { Accordion, Card, Button } from 'react-bootstrap';
-
-function Poetry() {
   return (
-    <Container fluid className="about-section">
-      <h1 style={{paddingBottom: "100px"}}>Poems by Me</h1>
-
-      {poems.map((poem) => (
-        <div key={poem.title}>
-            <h2 style={{ fontSize: "2em", textAlign: "left", paddingLeft: "100px" }}>
-            {poem.title} - <span className="purple"> {poem.date} </span>
-            </h2>
-
-            <Accordion defaultActiveKey="0" style={{ paddingLeft: "100px" }}>
-            <Accordion.Item eventKey="1">
-                <Accordion.Header>Expand to read</Accordion.Header>
-                <Accordion.Body dangerouslySetInnerHTML={{ __html: poem.content }} />
-            </Accordion.Item>
-            <h2 style={{ fontSize: "0.7em", textAlign: "right", paddingRight: "150px" }}>
-            by Prafull Sharma
-            </h2>
-            </Accordion>
-
-            
+    <motion.div
+      className="poem-card"
+      initial={{ opacity: 0, x: -30 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.5,
+        delay: index * 0.06,
+        ease: [0.22, 1, 0.36, 1],
+      }}
+    >
+      <motion.div
+        className="poem-header"
+        onClick={() => setIsOpen(!isOpen)}
+        whileHover={{ x: 6 }}
+        transition={{ duration: 0.2 }}
+      >
+        <div className="poem-title-group">
+          <span className="poem-number">
+            {String(index + 1).padStart(2, "0")}
+          </span>
+          <span className="poem-title">{poem.title}</span>
+          <span className="poem-date">{poem.date}</span>
         </div>
-        ))}
+        <motion.div
+          animate={{ rotate: isOpen ? 180 : 0 }}
+          transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <HiChevronDown className="poem-expand-icon" />
+        </motion.div>
+      </motion.div>
 
-    </Container>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            style={{ overflow: "hidden" }}
+          >
+            <motion.div
+              className="poem-body"
+              initial={{ y: 10 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
+            >
+              {poem.content}
+              <div className="poem-attribution">— Prafull Sharma</div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
   );
 }
 
-const poems = [
-    {
-        title: "Ganandorf",
-        content: `
-            True cruelty<br/>
-            smiles in your face,<br/>
-            slips off your gaurd<br/>
-            and lays beside.<br/>
-            <br/>
-            <br/>
-            It explains past victims<br/>
-            and unique dispositions,<br/>
-            masking the chambering<br/>
-            of another heartbreak.
-        `,
-        date: "12/11/23",
-    },
-    {
-        title: "Migratory Birds",
-        content: `
-            Does thou tire,<br/>
-            of migration<br/>
-            and its generosity<br/>
-            of unchanged change?<br/>
-            <br/>
-            <br/>
-            When beacons translate<br/>
-            pregnant abodes<br/>
-            are left barren<br/>
-            expecting me back.
-        `,
-        date: "12/6/23",
-    },
-    {
-        title: "The Fledgling",
-        content: `
-        Nestled in the soft moss<br/>
-        in a clumsy heap<br/>
-        the fledgling looks upward<br/>
-        and remembers home --<br/>
-        <br></br>
-        familiar chattering,<br/>
-        the symphony of life<br/>
-        with daily cresendos<br/>
-        of love.
-        `,
-        date: "8/9/23",
-    },
-    {
-        title: "What's Important?",
-        content: `
-        What's more important,<br/>
-        the flower or the soil that grows it?<br/>
-        The secret you were told,<br/>
-        or the number of people who know it?<br/>
-        <br/>
-        <br/>
-        The way your thoughts flow,<br/>
-        or the power to control it?<br/>
-        Native to the first world,<br/>
-        concepts like these are foreign.
-        `,
-        date: "7/10/23",
-    },
-  
-    {
-    title: "Lessons from the Mahabharata",
-    content: `
-        If life was a story,</br>
-        then years are the sentences</br>
-        enunciated by the words </br>
-        of everyday living.</br></br>
-        And in between these words</br>
-        lie the letters of emotions,</br>
-        each syllable boomed</br>
-        off the script of life.</br></br>
-        My time dribbles at the chin</br>
-        of a cosmic God</br>
-        expounding my Mahabharata,</br>
-        the journey behind details and reasons.
-    `,
-    date: "2/19/23",
-    },
-    {
-        title: "Sometimes I Dream",
-        content: `
-            Sometimes I scribble words,<br/>
-            and ask you what they mean -<br/>
-            the only time that they make sense<br/>
-            is when I fall asleep.<br/>
-            <br/>
-            <br/>
-            For in my dreams I’m dead,<br/>
-            hindered when I’m alive,<br/>
-            talking to souls and memories<br/>
-            for sleep is death being shy.  
-        `,
-        date: "5/1/22",
-    },
-    {
-        title: "The Kwisatz Haderach",
-        content: `
-            Cinnamon-reeking flames</br>
-            temper the sands of time</br>
-            to make glass cages</br>
-            for my trinocular focus
-        `,
-        date: "1/30/2022",
-    },
-    {
-        title: "Grandfathers of the Forest",
-        content: `
-            The oaks bend and groan</br></br>
-            leaning on splintery canes as they sway.</br></br>
-            With their torrential whooping and breezy snickering,</br></br>
-            the oaks gaze below with sympathy and adoration --</br></br>
-            "We have much to teach" they offer, "will you listen?"</br></br>
-            But the unsuspecting pupils disappear after a summer's growth,</br></br>
-            yet wiser still the oaks grow, unbothered by the neglect.</br></br>
-            The soft crackling of weathered bones fills the Forest</br></br>
-            as they re-extend their gracious offer to new generations.
-        `,
-        date: "10/20/21",
-    },
-    {
-        title: "Morals (a haiku)",
-        content: `
-            Don't preach your morals</br>
-            til you have money to fund</br>
-            your own temptations.
-        `,
-        date: "4/2/21",
-    },
-  
-  
-];
+function Poetry() {
+  return (
+    <section className="poetry-section">
+      <div className="poetry-container">
+        <motion.div
+          className="section-header"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <motion.p
+            className="section-label"
+            initial={{ opacity: 0, letterSpacing: "0.3em" }}
+            whileInView={{ opacity: 1, letterSpacing: "0.12em" }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          >
+            Writing
+          </motion.p>
+          <motion.h2
+            className="section-title"
+            initial={{ opacity: 0, y: 40, skewY: 2 }}
+            whileInView={{ opacity: 1, y: 0, skewY: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          >
+            Poetry
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            style={{
+              color: "var(--text-secondary)",
+              marginTop: "1rem",
+              maxWidth: "600px",
+              fontSize: "1.1rem",
+            }}
+          >
+            Nature, identity, mythology & the quiet spaces between.
+          </motion.p>
+        </motion.div>
+
+        <div className="poetry-list" style={{ position: "relative" }}>
+          {poems.map((poem, i) => (
+            <PoemCard key={poem.title} poem={poem} index={i} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
 
 export default Poetry;
