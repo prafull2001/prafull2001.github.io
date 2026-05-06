@@ -209,20 +209,6 @@ function Poetry() {
           >
             Poetry
           </motion.h2>
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            style={{
-              color: "var(--text-secondary)",
-              marginTop: "1rem",
-              maxWidth: "600px",
-              fontSize: "1.1rem",
-            }}
-          >
-            Nature, identity, mythology & the quiet spaces between.
-          </motion.p>
         </motion.div>
 
         <div className="poetry-list" style={{ position: "relative" }}>
