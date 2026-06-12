@@ -102,6 +102,7 @@
     padding: 6rem 2.5rem 2rem;
     gap: 0.25rem;
     transition: right 0.5s var(--ease-out-expo);
+    z-index: 1000;
   }
 
   .navbar-links.open {
@@ -281,8 +282,8 @@
   .hero-content {
     grid-template-columns: 1fr;
     text-align: left;
-    padding-top: 7rem;
-    gap: 2.5rem;
+    padding: 7rem 1.5rem 3rem;
+    gap: 2rem;
   }
 
   .hero-image-wrapper {
@@ -291,8 +292,16 @@
   }
 
   .hero-image {
-    max-width: 160px;
-    border-radius: 18px;
+    max-width: 140px;
+    border-radius: 16px;
+  }
+
+  .hero-tagline {
+    max-width: 100%;
+  }
+
+  .hero-cta {
+    flex-wrap: wrap;
   }
 }
 
@@ -344,6 +353,68 @@
   font-weight: 600;
 }
 
+/* Press */
+.press-section {
+  margin-top: 5rem;
+}
+
+.press-item {
+  display: block;
+  max-width: 640px;
+  padding: 1.5rem 1.75rem;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: 16px;
+  text-decoration: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.press-item:hover {
+  border-color: var(--accent);
+  box-shadow: 0 6px 20px rgba(184, 134, 11, 0.08);
+}
+
+.press-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+}
+
+.press-meta .press-date {
+  color: var(--text-secondary);
+}
+
+.press-meta .press-date::before {
+  content: "·";
+  margin-right: 0.6rem;
+  color: var(--border-subtle);
+}
+
+.press-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.press-item:hover .press-title {
+  color: var(--accent);
+}
+
+.press-note {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
 /* Tech Stack */
 .tech-section {
   margin-top: 5rem;
@@ -380,6 +451,16 @@
 
 .tech-item svg {
   font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 0 1.5rem;
+  }
+
+  .about-text p {
+    font-size: 1.05rem;
+  }
 }
 
 /* ======================== */
@@ -537,6 +618,10 @@
 }
 
 @media (max-width: 768px) {
+  .projects-container {
+    padding: 0 1.5rem;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
@@ -553,6 +638,18 @@
     padding: 1.5rem;
     border-right: none;
     border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .project-card-content {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .project-card-title {
+    font-size: 1.2rem;
+  }
+
+  .project-card.featured .project-card-title {
+    font-size: 1.3rem;
   }
 }
 
@@ -669,6 +766,30 @@
   letter-spacing: 0.03em;
 }
 
+@media (max-width: 768px) {
+  .poetry-container {
+    padding: 0 1.5rem;
+  }
+
+  .poem-title-group {
+    gap: 0.75rem;
+  }
+
+  .poem-title {
+    font-size: 1.1rem;
+  }
+
+  .poem-date {
+    display: none;
+  }
+
+  .poem-body {
+    padding: 0 1rem 1.5rem 2.5rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
 /* ======================== */
 /* RESUME SECTION            */
 /* ======================== */
@@ -713,9 +834,22 @@
 }
 
 @media (max-width: 768px) {
+  .resume-container {
+    padding: 0 1.5rem;
+  }
+
+  .resume-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .resume-embed {
     height: 60vh;
     min-height: 400px;
+  }
+
+  .resume-embed-wrapper {
+    border-radius: 12px;
   }
 }
 

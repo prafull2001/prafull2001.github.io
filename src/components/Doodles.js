@@ -14,7 +14,7 @@ export function AnimatedUnderline({
       height="12"
       viewBox={`0 0 ${width} 12`}
       fill="none"
-      style={{ display: "block", overflow: "visible", ...style }}
+      style={{ display: "block", overflow: "visible", maxWidth: "100%", ...style }}
     >
       <motion.path
         d={`M0 8 Q${width * 0.25} 2, ${width * 0.5} 6 T${width} 4`}

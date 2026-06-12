@@ -46,3 +46,10 @@
 - MatchMeds won $15,000 (NOT $11,000) at the Diamond Challenge
 - MatchMeds demo link is a pitch video on Vimeo
 - MatchMeds goes right after Spool (position 2)
+
+## Press & SEO
+- Press section lives on the About page (`.press-section`) between bio and tech stack
+- First press piece: "What 8,667 People Said the Second Before They Picked Up Their Phone" by Chris Kern, We Are Founders, June 2026
+- User's TikTok: https://www.tiktok.com/@sixthreebrowngoated
+- Person JSON-LD is in `public/index.html`; press articles referenced via `subjectOf` (Article); social profiles go in `sameAs`
+- User cofounded Spool (use "cofounded", not "founded", in press copy)

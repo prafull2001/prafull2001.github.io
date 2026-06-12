@@ -140,6 +140,60 @@ function About() {
           </div>
         </div>
 
+        {/* Press */}
+        <div className="press-section">
+          <motion.div
+            className="section-header"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <motion.p
+              className="section-label"
+              initial={{ opacity: 0, letterSpacing: "0.3em" }}
+              whileInView={{ opacity: 1, letterSpacing: "0.12em" }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            >
+              Press
+            </motion.p>
+            <h2 className="section-title">
+              <motion.span
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+              >
+                Featured in
+              </motion.span>
+            </h2>
+          </motion.div>
+
+          <motion.a
+            className="press-item"
+            href="https://www.wearefounders.uk/what-8-667-people-said-the-second-before-they-picked-up-their-phone/"
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            whileHover={{ y: -4 }}
+          >
+            <div className="press-meta">
+              <span className="press-outlet">We Are Founders</span>
+              <span className="press-date">June 2026</span>
+            </div>
+            <h3 className="press-title">
+              What 8,667 People Said the Second Before They Picked Up Their Phone
+            </h3>
+            <p className="press-note">
+              A look at Spool, the screen time app I cofounded, and the voice
+              recording dataset behind it.
+            </p>
+          </motion.a>
+        </div>
+
         {/* Tech Stack */}
         <div className="tech-section">
           <motion.div

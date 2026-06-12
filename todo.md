@@ -1,5 +1,11 @@
 # Todo
 
+## Press / SEO Session
+- [x] Add "Featured in" press section to About page (We Are Founders article, June 2026)
+- [x] Press item: outlet, linked title as anchor, date, one-line Spool note
+- [x] Person JSON-LD: add TikTok + thespoolapp.com to sameAs, reference article via subjectOf
+- [x] Verified Spool mentions already link to thespoolapp.com with "Spool" anchor (no "my startup")
+
 ## Completed This Session
 - [x] Fix profile photo orientation (EXIF stripped via PIL, verified clean)
 - [x] Spool link blue (#56B5E3) everywhere
