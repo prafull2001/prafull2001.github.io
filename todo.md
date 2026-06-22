@@ -1,5 +1,12 @@
 # Todo
 
+## Bunny Project Session
+- [x] Add Bunny (couples app SEO/GEO engineering project) to Projects.js
+- [x] Downloaded app icon from App Store (id6756160637) -> src/Assets/Projects/bunny.jpg
+- [x] Featured card, Website + App Store badge links (mirrors Spool pattern)
+- [x] Placed at position 3 (after Spool + MatchMeds, kept MatchMeds at position 2 per lessons)
+- [x] Description in user's voice, no em dashes
+
 ## Press / SEO Session
 - [x] Add "Featured in" press section to About page (We Are Founders article, June 2026)
 - [x] Press item: outlet, linked title as anchor, date, one-line Spool note

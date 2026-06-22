@@ -9,6 +9,7 @@ import shell from "../../Assets/Projects/shell.png";
 import jumper from "../../Assets/Projects/jumper.png";
 import nhs from "../../Assets/Projects/nhs.png";
 import stem from "../../Assets/Projects/stemplayer.jpg";
+import bunny from "../../Assets/Projects/bunny.jpg";
 import appStoreBadge from "../../Assets/app-store-badge.svg";
 
 const projects = [
@@ -31,6 +32,17 @@ const projects = [
     tags: ["React", "Node.js", "MongoDB", "Express"],
     github: "https://github.com/prafull2001/matchmeds-demo-app",
     demo: "https://vimeo.com/344841700",
+    featured: true,
+  },
+  {
+    title: "Bunny",
+    description:
+      "Full SEO, GEO, and content engineering for Bunny, an iOS app for couples. Its marketing site was a React/Vite SPA that rendered blank to search and AI crawlers, so I re-architected it into a statically prerendered, schema-rich site. Added JSON-LD structured data, an llms.txt layer for AI assistants, competitor-comparison and blog pages, and cut the hero image from 2.45 MB to ~40 KB.",
+    image: bunny,
+    tags: ["Technical SEO", "GEO", "React", "Vite"],
+    github: null,
+    demo: "https://www.bunnycouples.com",
+    appStore: "https://apps.apple.com/us/app/bunny-love-notes-for-couples/id6756160637",
     featured: true,
   },
   {
