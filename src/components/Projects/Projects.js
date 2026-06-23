@@ -37,7 +37,7 @@ const projects = [
   {
     title: "Bunny",
     description:
-      "Full SEO, GEO, and content engineering for Bunny, an iOS app for couples. Its marketing site was a React/Vite SPA that rendered blank to search and AI crawlers, so I re-architected it into a statically prerendered, schema-rich site. Added JSON-LD structured data, an llms.txt layer for AI assistants, competitor-comparison and blog pages, and cut the hero image from 2.45 MB to ~40 KB.",
+      "iOS app for couples to stay close through love notes, shared whiteboard doodles, daily check-ins, question packs, and a virtual pet you care for together. Made for long-distance and busy couples who want a more intentional way to stay emotionally connected. I led the SEO, GEO, and content engineering behind its marketing site.",
     image: bunny,
     tags: ["Technical SEO", "GEO", "React", "Vite"],
     github: null,
