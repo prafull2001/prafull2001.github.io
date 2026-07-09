@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d745c636.css",
-    "main.js": "/static/js/main.4ea15d59.js",
+    "main.css": "/static/css/main.1602bfec.css",
+    "main.js": "/static/js/main.9e24a5e8.js",
     "static/media/profile-photo.png": "/static/media/profile-photo.3cb9be9e9d2d9c26a1ff.png",
     "static/media/spooli-app-icon.png": "/static/media/spooli-app-icon.f297d1263e823368dfe1.png",
     "static/media/stemplayer.jpg": "/static/media/stemplayer.f11dc346e998167bf45a.jpg",
@@ -12,11 +12,11 @@
     "static/media/nhs.png": "/static/media/nhs.6a3183a7318e065992ba.png",
     "static/media/app-store-badge.svg": "/static/media/app-store-badge.8c4986ee4828b47d16f5cd694ef065f2.svg",
     "index.html": "/index.html",
-    "main.d745c636.css.map": "/static/css/main.d745c636.css.map",
-    "main.4ea15d59.js.map": "/static/js/main.4ea15d59.js.map"
+    "main.1602bfec.css.map": "/static/css/main.1602bfec.css.map",
+    "main.9e24a5e8.js.map": "/static/js/main.9e24a5e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.d745c636.css",
-    "static/js/main.4ea15d59.js"
+    "static/css/main.1602bfec.css",
+    "static/js/main.9e24a5e8.js"
   ]
 }
